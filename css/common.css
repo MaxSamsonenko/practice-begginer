@@ -23,3 +23,7 @@ button {
 	padding: 8px 12px;
 	cursor: pointer;
 }
+p {
+	margin: 0;
+	padding: 0;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="./css/pages/bmi-calculator.css" />
+	</head>
+	<body>
+		<h1>BMI Calculator</h1>
+		<p>Please enter your parameters below</p>
+		<div class="container">
+			<form id="bmi-form" class="form">
+				<label for="weight" class="form-label">
+					<div class="input-wrap">
+						<input
+							id="weight"
+							required
+							class="form-input"
+							type="text"
+							inputmode="numeric"
+							class="weight"
+							maxlength="5"
+							autocomplete="off"
+							step="0.01"
+							placeholder="Enter weight..."
+							oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+						/>
+						kg
+					</div>
+				</label>
+				<label for="height" class="form-label">
+					<div class="input-wrap">
+						<input
+							id="height"
+							required
+							class="form-input"
+							type="text"
+							inputmode="numeric"
+							class="height"
+							maxlength="5"
+							autocomplete="off"
+							step="0.01"
+							placeholder="Enter height..."
+							oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+						/>
+						cm
+					</div>
+				</label>
+				<button type="submit" class="form-btn">Check results</button>
+			</form>
+			<div class="result-container">
+				<p class="result">Your results will be displayed here</p>
+			</div>
+		</div>
+		<div class="bmi-explanation"></div>
+
+		<script src="./js/bmi-calculator/bmi-calculator.js" type="module"></script>
+	</body>
+</html>
