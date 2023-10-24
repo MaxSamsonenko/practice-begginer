@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>String reverser</title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/pages/string-reverser.css" />
+	</head>
+	<body>
+		<h1>String reverser</h1>
+		<p>Enter your string below</p>
+		<form id="form-reverser" class="form">
+			<label for="input" class="form-label">
+				<div class="input-wrap">
+					<textarea
+						id="input"
+						required
+						class="form-input"
+						type="text"
+						maxlength="175"
+						rows="5"
+						cols="33"
+						autocomplete="off"
+						placeholder="175 characters max..."
+					></textarea>
+				</div>
+			</label>
+			<button type="submit" class="form-btn">Reverse string</button>
+		</form>
+		<div class="result-wrapper">
+			<p class="entered-text"></p>
+			<p class="reversed-text"></p>
+		</div>
+		<script
+			src="../js/string-reverser/string-reverser.js"
+			type="module"
+		></script>
+	</body>
+</html>

@@ -20,6 +20,7 @@ function handleFormSubmit(e) {
 		1
 	);
 	result.innerHTML = bmI;
+	result.classList.add("result-disp");
 	addExplanation(userCategory(bmI));
 
 	inputFieldClear();
