@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cross Sum of a Number</title>
+		<link rel="stylesheet" href="../css/common.css" />
+	</head>
+	<body>
+		<h1>Cross Sum of a Number</h1>
+		<p>Please enter your a number below</p>
+		<form id="cross-form" class="form">
+			<label for="cross" class="form-label">
+				<div class="input-wrap">
+					<input
+						id="cross"
+						required
+						class="form-input"
+						type="text"
+						inputmode="numeric"
+						maxlength="15"
+						autocomplete="off"
+						step="1"
+						placeholder="Enter number..."
+						oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+					/>
+				</div>
+			</label>
+
+			<button type="submit" class="form-btn">Calculate</button>
+		</form>
+		<div class="results"></div>
+		<script src="../js/cross-sum/cross-sum.js" type="module"></script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Decimal to Binary</title>
+		<link rel="stylesheet" href="../css/common.css" />
+	</head>
+	<body>
+		<h1>Decimal to Binary</h1>
+		<p>Please enter your a decimal below</p>
+		<form id="decimal-form" class="form">
+			<label for="decimal" class="form-label">
+				<div class="input-wrap">
+					<input
+						id="decimal"
+						required
+						class="form-input"
+						type="text"
+						inputmode="numeric"
+						maxlength="5"
+						autocomplete="off"
+						step="1"
+						placeholder="Enter decimal..."
+						oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+					/>
+				</div>
+			</label>
+
+			<button type="submit" class="form-btn">Check results</button>
+		</form>
+		<div class="results"></div>
+		<script src="../js/decimal-to-binary/decimal-to-binary.js"></script>
+	</body>
+</html>
