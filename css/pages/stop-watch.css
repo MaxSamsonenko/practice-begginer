@@ -1,0 +1,16 @@
+.display {
+	font-size: 50px;
+}
+.stopBtn {
+	background-color: rgb(179, 47, 47);
+}
+.laps {
+	margin-top: 30px;
+}
+.table {
+	width: 200px;
+}
+.column {
+	text-align: center;
+	width: 30%;
+}
