@@ -9,6 +9,34 @@
 	</head>
 	<body>
 		<h1>Calculator</h1>
-		<script src="../../js/calculator/calculator.js"></script>
+		<div class="calculator">
+			<input type="text" id="display" disabled class="calculator-display" />
+			<div id="buttons" class="buttons btn-container">
+				<button name="digit" class="calc-btn number" value="7">7</button>
+				<button name="digit" class="calc-btn number" value="8">8</button>
+				<button name="digit" class="calc-btn number" value="9">9</button>
+				<button name="operator" class="calc-btn operator" value="/">/</button>
+				<button name="digit" class="calc-btn number" value="4">4</button>
+				<button name="digit" class="calc-btn number" value="5">5</button>
+				<button name="digit" class="calc-btn number" value="6">6</button>
+				<button name="operator" class="calc-btn operator" value="*">*</button>
+				<button name="digit" class="calc-btn number" value="1">1</button>
+				<button name="digit" class="calc-btn number" value="2">2</button>
+				<button name="digit" class="calc-btn number" value="3">3</button>
+				<button name="operator" class="calc-btn operator" value="-">-</button>
+				<button name="digit" class="calc-btn number" value="0">0</button>
+				<button name="float" class="calc-btn operator" value=".">.</button>
+				<button name="equals" class="calc-btn operator" value="=">=</button>
+				<button name="operator" class="calc-btn operator" value="+">+</button>
+				<button name="clear" class="calc-btn clear" value="C">C</button>
+			</div>
+		</div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.0.0/math.js"
+			integrity="sha512-rffRpOvP8/vOkbpVUpjesEh2AI40+pNcMh0LAAdOKBE96pLnJh1IGKGhu/RL5lrmW8fA9p5ph5GkCOlMNXr3eg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="../../js/calculator/calculator.js" type="module"></script>
 	</body>
 </html>
